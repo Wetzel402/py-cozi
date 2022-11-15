@@ -5,8 +5,8 @@ username = 'johndoe@email.com'
 password = 'MySuperSecretPassword!'
 list_id = 'listIdFromCozi'
 item_id = 'itemIdFromCozi'
-items_list = [{"status":"complete","itemId":"b3e23bcc-b90a-4d0d-9657-67958563e17c","itemType":None,"text":"item 1"},
-{"status":"complete","itemId":"a9879ae1-078a-4185-b090-68fffe033905","itemType":"header","text":"item 2"}]
+items_list = [{"status":"incomplete","itemId":"itemIdfromCozi-1","itemType":None,"text":"item 1"},
+{"status":"incomplete","itemId":"itemIdFromCozi-2","itemType":"header","text":"item 2"}]
 item_text = 'test item'
 item_pos = 0
 item_status = "complete"

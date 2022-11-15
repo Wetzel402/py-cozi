@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-import json
 import aiohttp
 import logging
 
@@ -96,7 +95,7 @@ class Cozi:
             # Delete our current token and try again -- will force a login attempt.
             self._access_token = None
 
-            return self.get_persons(True)
+            return await self.get_persons(True)
 
         raise CoziException((REQUEST, _json_resp))
 
@@ -121,7 +120,7 @@ class Cozi:
             # Delete our current token and try again -- will force a login attempt.
             self._access_token = None
 
-            return self.get_persons(True)
+            return await self.get_lists(True)
 
         raise CoziException((REQUEST, _json_resp))
 
@@ -149,7 +148,7 @@ class Cozi:
             # Delete our current token and try again -- will force a login attempt.
             self._access_token = None
 
-            return self.get_persons(True)
+            return await self.add_list(list_title, list_type,True)
 
         raise CoziException((REQUEST, _json_resp))
 
@@ -175,11 +174,11 @@ class Cozi:
             # Delete our current token and try again -- will force a login attempt.
             self._access_token = None
 
-            return self.get_persons(True)
+            return await self.remove_list(list_id, True)
 
         raise CoziException((REQUEST, _json_resp))
 
-    async def reorder_list(self, list_id, list_title, items, list_type):
+    async def reorder_list(self, list_id, list_title, items, list_type, is_retry=False):
         """reorders the items in a list"""
         """this is just how Cozi handles reordering items so be careful"""
         if not self._access_token:
@@ -212,7 +211,7 @@ class Cozi:
             # Delete our current token and try again -- will force a login attempt.
             self._access_token = None
 
-            return self.get_persons(True)
+            return await self.reorder_list(list_id, list_title, items, list_type, True)
 
         raise CoziException((REQUEST, _json_resp))
 
@@ -240,7 +239,7 @@ class Cozi:
             # Delete our current token and try again -- will force a login attempt.
             self._access_token = None
 
-            return self.get_persons(True)
+            return await self.add_item(list_id, item_text, item_pos, True)
 
         raise CoziException((REQUEST, _json_resp))
 
@@ -267,7 +266,7 @@ class Cozi:
             # Delete our current token and try again -- will force a login attempt.
             self._access_token = None
 
-            return self.get_persons(True)
+            return await self.edit_item(list_id, item_id, item_text, True)
 
         raise CoziException((REQUEST, _json_resp))
 
@@ -294,7 +293,7 @@ class Cozi:
             # Delete our current token and try again -- will force a login attempt.
             self._access_token = None
 
-            return self.get_persons(True)
+            return await self.mark_item(list_id, item_id, status, True)
 
         raise CoziException((REQUEST, _json_resp))
 
@@ -324,7 +323,7 @@ class Cozi:
             # Delete our current token and try again -- will force a login attempt.
             self._access_token = None
 
-            return self.get_persons(True)
+            return await self.remove_items(list_id, items, True)
 
         raise CoziException((REQUEST, _json_resp))
 
@@ -351,7 +350,7 @@ class Cozi:
             # Delete our current token and try again -- will force a login attempt.
             self._access_token = None
 
-            return self.get_persons(True)
+            return await self.get_calendar(year, month, True)
 
         raise CoziException((REQUEST, _json_resp))
 
@@ -418,7 +417,19 @@ class Cozi:
             # Delete our current token and try again -- will force a login attempt.
             self._access_token = None
 
-            return self.get_persons(True)
+            return await self.add_appointment(
+                year,
+                month,
+                day,
+                start,
+                end,
+                date_span,
+                attendees,
+                location,
+                notes,
+                subject,
+                True
+            )
 
         raise CoziException((REQUEST, _json_resp))
 
@@ -487,7 +498,20 @@ class Cozi:
             # Delete our current token and try again -- will force a login attempt.
             self._access_token = None
 
-            return self.get_persons(True)
+            return await self.edit_appointment(
+                appt_id,
+                year,
+                month,
+                day,
+                start,
+                end,
+                date_span,
+                attendees,
+                location,
+                notes,
+                subject,
+                True,
+            )
 
         raise CoziException((REQUEST, _json_resp))
 
@@ -514,6 +538,6 @@ class Cozi:
             # Delete our current token and try again -- will force a login attempt.
             self._access_token = None
 
-            return self.get_persons(True)
+            return await self.remove_appointment(year, month, appt_id, True)
 
         raise CoziException((REQUEST, _json_resp))
