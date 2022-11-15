@@ -40,7 +40,7 @@ Gets all of your lists.
 Adds a new list.
 
 | Parameter   | Type        | Description           |
-| :---        |    :----:   |                  ---: |
+| :---        |    :---     |                  :--- |
 | list_title  | string      | Title of your list    |
 | list_type   | string      | 'todo' or 'shopping'  |
 
@@ -51,7 +51,7 @@ Adds a new list.
 Removes a list.
 
 | Parameter   | Type        | Description           |
-| :---        |    :----:   |                  ---: |
+| :---        |    :---     |                  :--- |
 | list_id     | string      | Cozi list id          |
 
 ---
@@ -61,7 +61,7 @@ Removes a list.
 Reorders a list.
 
 | Parameter   | Type        | Description                |
-| :---        |    :----:   |                       ---: |
+| :---        |    :---     |                       :--- |
 | list_id     | string      | Cozi list id               |
 | list_title  | string      | Title or name of your list |
 | items_list  | list        | List of JSON Cozi items    |
@@ -74,7 +74,7 @@ Reorders a list.
 Adds an item to a list.
 
 | Parameter   | Type        | Description                      |
-| :---        |    :----:   |                             ---: |
+| :---        |    :---     |                             :--- |
 | list_id     | string      | Cozi list id                     |
 | item_text   | string      | Title or name of your item       |
 | item_pos    | int         | Array index position of the item |
@@ -86,7 +86,7 @@ Adds an item to a list.
 Edits an item in a list.
 
 | Parameter   | Type        | Description                |
-| :---        |    :----:   |                       ---: |
+| :---        |    :---     |                       :--- |
 | list_id     | string      | Cozi list id               |
 | item_id     | string      | Cozi item id               |
 | item_text   | string      | Title or name of your item |
@@ -98,7 +98,7 @@ Edits an item in a list.
 Checks or completes and item in a list.
 
 | Parameter   | Type        | Description                |
-| :---        |    :----:   |                       ---: |
+| :---        |    :---     |                       :--- |
 | list_id     | string      | Cozi list id               |
 | item_id     | string      | Cozi item id               |
 | item_status | string      | 'complete' or 'incomplete' |
@@ -110,7 +110,7 @@ Checks or completes and item in a list.
 Removes item(s) from a list.
 
 | Parameter   | Type        | Description                |
-| :---        |    :----:   |                       ---: |
+| :---        |    :---     |                       :--- |
 | list_id     | string      | Cozi list id               |
 | items_list  | list        | List of Cozi item IDs      |
 
@@ -121,7 +121,7 @@ Removes item(s) from a list.
 Gets calendar appointments for a given year and month. 
 
 | Parameter   | Type        | Description |
-| :---        |    :----:   |        ---: |
+| :---        |    :---     |        :--- |
 | year        | int         | Year        |
 | month       | int         | Month       |
 
@@ -132,7 +132,7 @@ Gets calendar appointments for a given year and month.
 Adds a new calendar appointment.  
 
 | Parameter   | Type        | Description                          |
-| :---        |    :----:   |                                 ---: |
+| :---        |    :---     |                                 :--- |
 | year        | int         | Year                                 |
 | month       | int         | Month                                |
 | day         | int         | Day                                  |
@@ -151,7 +151,7 @@ Adds a new calendar appointment.
 Edits a calendar appointment.  
 
 | Parameter   | Type        | Description                          |
-| :---        |    :----:   |                                 ---: |
+| :---        |    :---     |                                 :--- |
 | appt_id     | string      | Cozi appointment ID                  |
 | year        | int         | Year                                 |
 | month       | int         | Month                                |
@@ -171,7 +171,7 @@ Edits a calendar appointment.
 Removes a calendar appointment.  
 
 | Parameter   | Type        | Description                          |
-| :---        |    :----:   |                                 ---: |
+| :---        |    :---     |                                 :--- |
 | year        | int         | Year                                 |
 | month       | int         | Month                                |
 | appt_id     | string      | Cozi appointment ID                  |
