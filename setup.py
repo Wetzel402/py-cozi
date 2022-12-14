@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-PACKAGES = find_packages(exclude=['test_api'])
+PACKAGES = find_packages(exclude=['tests', 'tests.*'])
 
 REQUIRES = [
     'aiohttp==3.8.1',
@@ -8,7 +8,7 @@ REQUIRES = [
 ]
 
 setup(
-    name='py-cozi',
+    name='cozi',
     version='1.0.0',
     author="Cody Wetzel",
     author_email="wetzelredistribution@gmail.com",

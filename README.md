@@ -1,11 +1,25 @@
+# py-cozi
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Methods](#methods)
+- [Exceptions](#exceptions)
+
+<a name="introduction"></a>
+## Introduction
+
 Unofficial python wrapper for the Cozi API. This library requires `Python >=3.5`.
 
+<a name="installation"></a>
 ## Installation
 
 ```bash
 pip install py-cozi
 ```
 
+<a name="usage"></a>
 ## Usage
 
 ```
@@ -22,6 +36,7 @@ get_lists = asyncio.run(cozi.get_lists())
 print(get_lists)
 ```
 
+<a name="methods"></a>
 ## Methods
 ```def login()```
 
@@ -176,6 +191,7 @@ Removes a calendar appointment.
 | month       | int         | Month                                |
 | appt_id     | string      | Cozi appointment ID                  |
 
+<a name="exceptions"></a>
 ## Exceptions
 
 ```CoziException```
