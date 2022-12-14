@@ -16,7 +16,7 @@ Unofficial python wrapper for the Cozi API. This library requires `Python >=3.5`
 ## Installation
 
 ```bash
-pip install py-cozi
+pip install cozi
 ```
 
 <a name="usage"></a>
