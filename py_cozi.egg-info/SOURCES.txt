@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+cozi/__init__.py
+cozi/exceptions.py
+py_cozi.egg-info/PKG-INFO
+py_cozi.egg-info/SOURCES.txt
+py_cozi.egg-info/dependency_links.txt
+py_cozi.egg-info/not-zip-safe
+py_cozi.egg-info/requires.txt
+py_cozi.egg-info/top_level.txt

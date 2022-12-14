@@ -8,7 +8,7 @@ REQUIRES = [
 ]
 
 setup(
-    name='cozi',
+    name='py-cozi',
     version='1.0.0',
     author="Cody Wetzel",
     author_email="wetzelredistribution@gmail.com",
