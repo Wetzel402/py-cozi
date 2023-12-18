@@ -179,7 +179,7 @@ class Cozi:
 
         raise CoziException((REQUEST, _json_resp))
 
-    async def reorder_list(self, list_id, list_title, items, list_type):
+    async def reorder_list(self, list_id, list_title, items, list_type, is_retry=False):
         """reorders the items in a list"""
         if not self._access_token:
             await self.login()
