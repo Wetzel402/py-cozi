@@ -9,7 +9,7 @@ REQUIRES = [
 
 setup(
     name='py-cozi',
-    version='1.0.3',
+    version='1.0.4',
     author="Cody Wetzel",
     author_email="wetzelredistribution@gmail.com",
     keywords='unoffical Cozi api',
