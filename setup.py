@@ -3,13 +3,12 @@ from setuptools import setup, find_packages
 PACKAGES = find_packages(exclude=['tests', 'tests.*'])
 
 REQUIRES = [
-    'aiohttp>=3.9.2',
-    'beautifulsoup4>=4.10.0'
+    'aiohttp>=3.13.3'
 ]
 
 setup(
     name='py-cozi',
-    version='1.0.4',
+    version='2026.2.0',
     author="Cody Wetzel",
     author_email="wetzelredistribution@gmail.com",
     keywords='unoffical Cozi api',
@@ -20,7 +19,7 @@ setup(
     license='MIT',
     packages=PACKAGES,
     include_package_data=True,
-    python_requires='>=3.5',
+    python_requires='>=3.9',
     zip_safe=False,
     install_requires=REQUIRES,
     classifiers=[

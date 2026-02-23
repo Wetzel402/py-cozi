@@ -1,16 +1,16 @@
 Metadata-Version: 2.1
 Name: py-cozi
-Version: 1.0.1
+Version: 2026.2.0
 Summary: Cozi Unofficial Python Package
 Home-page: https://github.com/Wetzel402/py-cozi
 Author: Cody Wetzel
 Author-email: wetzelredistribution@gmail.com
 License: MIT
-Keywords: unoffical Cozi api
+Keywords: unofficial Cozi api
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
-Requires-Python: >=3.5
+Requires-Python: >=3.9
 Description-Content-Type: text/markdown
 License-File: LICENSE
 
