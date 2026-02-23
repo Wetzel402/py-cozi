@@ -8,7 +8,7 @@ REQUIRES = [
 
 setup(
     name='py-cozi',
-    version='2026.2.0',
+    version='2026.2.1',
     author="Cody Wetzel",
     author_email="wetzelredistribution@gmail.com",
     keywords='unoffical Cozi api',
