@@ -10,7 +10,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-Unofficial python wrapper for the Cozi API. This library requires `Python >=3.5`.
+Unofficial python wrapper for the Cozi API. This library requires `Python >=3.9`.
 
 <a name="installation"></a>
 ## Installation
