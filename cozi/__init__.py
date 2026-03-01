@@ -10,7 +10,7 @@ LOGGER = logging.getLogger(__name__)
 
 # urls
 URL_BASE = "https://rest.cozi.com"
-URL_LOGIN = "{}/api/ext/2207/auth/login".format(URL_BASE)
+URL_LOGIN = "{}/api/ext/2207/auth/login?apikey=coziwc|v251_production".format(URL_BASE)
 URL_PERSON = "{}/api/ext/2004/{}/account/person/"
 URL_LISTS = "{}/api/ext/2004/{}/list/"
 URL_LIST = "{}/api/ext/2004/{}/list/{}"
